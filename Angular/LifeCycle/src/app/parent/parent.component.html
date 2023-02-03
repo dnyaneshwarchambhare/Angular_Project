@@ -1,0 +1,9 @@
+<h1>Parent componant</h1>
+
+<button (click)="toggleChild()">Toggle Child</button>
+
+<input type="text" [(ngModel)]="channelName">
+
+<app-child *ngIf="isChild" [channelName]="channelName">
+    <h2 #projectedContent>Welcome to Capgemini</h2>
+</app-child>
